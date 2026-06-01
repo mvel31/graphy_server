@@ -1,5 +1,4 @@
-FROM node:hydrogen-buster
-RUN apt-get update && apt-get install
+FROM node:20-bookworm
 COPY graphserver.js .
 COPY package.json .
 COPY UScities.json .
