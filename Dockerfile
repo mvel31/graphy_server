@@ -1,4 +1,5 @@
 FROM node:hydrogen-buster
+RUN apt-get update && apt-get install
 COPY graphserver.js .
 COPY package.json .
 COPY UScities.json .
